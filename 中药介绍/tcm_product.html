@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中药瑰宝 内外兼修 - 愈疾灵油与滋肾养肝汤</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            background: #f8f5f0;
+            color: #333;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        /* 头部标题 */
+        .header-banner {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg,#8c4b2e,#592f1b);
+            color: #fff;
+            border-radius: 12px;
+            margin-bottom: 50px;
+        }
+        .header-banner h1 {
+            font-size: 36px;
+            margin-bottom:12px;
+        }
+        .header-banner p.subtitle {
+            font-size:18px;
+            opacity:0.9;
+        }
+        /* 目录 */
+        .catalog-wrap{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:30px;
+            margin-bottom:60px;
+        }
+        .catalog-card{
+            background:#fff;
+            padding:35px;
+            border-radius:12px;
+            box-shadow:0 2px 12px rgba(0,0,0,0.08);
+        }
+        .catalog-card h2{
+            color:#8c4b2e;
+            margin-bottom:16px;
+            font-size:24px;
+        }
+        /* 产品板块通用 */
+        .product-section{
+            background:#ffffff;
+            border-radius:14px;
+            padding:45px;
+            margin-bottom:45px;
+            box-shadow:0 3px 14px rgba(0,0,0,0.07);
+        }
+        .product-section h2{
+            color:#703c24;
+            font-size:28px;
+            margin-bottom:24px;
+            border-left:6px solid #b47b4f;
+            padding-left:14px;
+        }
+        .two-col{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:35px;
+            margin:30px 0;
+        }
+        .text-block h3{
+            color:#80472c;
+            margin:16px 0 10px;
+        }
+        .effect-list{
+            list-style:none;
+        }
+        .effect-list li{
+            padding:8px 0;
+            border-bottom:1px solid #eee;
+        }
+        .img-box{
+            width:100%;
+        }
+        .img-box img{
+            width:100%;
+            border-radius:8px;
+            object-fit:cover;
+        }
+        .tip-warning{
+            background:#fff3cd;
+            color:#856404;
+            padding:14px 18px;
+            border-radius:8px;
+            margin-top:22px;
+        }
+        /* 适用人群卡片 */
+        .people-wrap{
+            display:grid;
+            grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+            gap:24px;
+            margin-top:30px;
+        }
+        .people-card{
+            border:1px solid #e9e2d9;
+            border-radius:10px;
+            overflow:hidden;
+            background:#fff;
+        }
+        .people-card img{
+            width:100%;
+            height:260px;
+            object-fit:cover;
+        }
+        .people-card .desc{
+            padding:18px;
+        }
+        /* 页脚 */
+        footer{
+            text-align:center;
+            padding:40px;
+            color:#666;
+        }
+        /* 响应式适配手机 */
+        @media(max-width:768px){
+            .catalog-wrap,.two-col{
+                grid-template-columns:1fr;
+            }
+            .header-banner h1{
+                font-size:26px;
+            }
+            .product-section{
+                padding:25px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- 头部 -->
+    <div class="header-banner">
+        <h1>中药瑰宝 内外兼修</h1>
+        <p class="subtitle">愈疾灵油与滋肾养肝汤深度解析</p>
+        <p style="margin-top:10px;">传承千年智慧 · 调和阴阳平衡 · 滋养生命本源</p>
+    </div>
+
+    <!-- 目录 -->
+    <div class="catalog-wrap">
+        <div class="catalog-card">
+            <h2>壹｜愈疾灵油</h2>
+            <p>外用圣品，愈疡生肌 · 古法炮制的修护之力</p>
+            <p style="margin-top:12px;color:#555;">甄选天然草本药材，经古法炮制萃取而成。针对皮肤疮疡、外伤愈合等问题，具有清热解毒、消肿止痛之效，温和修护，是居家常备的外用良方。</p>
+        </div>
+        <div class="catalog-card">
+            <h2>贰｜滋肾养肝汤</h2>
+            <p>内调良方，平衡五脏 · 顺应四时的养生之道</p>
+            <p style="margin-top:12px;color:#555;">融合枸杞、山药等药食同源食材，遵循中医五行相生之理。专为现代都市人群调理肝肾亏虚，改善代谢机能，缓解疲劳，重拾身体平衡与内在元气。</p>
+        </div>
+    </div>
+
+    <!-- 愈疾灵油部分 -->
+    <section class="product-section">
+        <h2>愈疾灵油 · 概述与核心功效</h2>
+        <p><strong>产品定位：</strong>一款集消炎、消肿、止痛、生肌于一体的外用中药油剂，传承中医外治精髓。针对各类皮肤创伤、烧烫伤及疮疡，以整体观念为指导，实现“标本兼治”，不仅快速缓解症状，更能促进创面修复，减少瘢痕形成。</p>
+
+        <div class="two-col">
+            <div class="text-block">
+                <h3>01 / 中医病机核心解析</h3>
+                <ul class="effect-list">
+                    <li><strong>火热毒邪侵袭：</strong>火毒灼伤皮肉，致腐肉败血，引发红、肿、热、痛等急性炎症反应，是皮肤创伤的根本诱因。</li>
+                    <li><strong>气血运行不畅：</strong>热毒阻滞脉络，导致局部气血凝滞，新肉难以生长，创面愈合迟缓，形成恶性循环。</li>
+                    <li><strong>津液亏虚失养：</strong>烧烫伤易耗伤人体津液，导致肌肤失于濡养，延缓修复进程，需兼顾益气养阴以固本。</li>
+                </ul>
+            </div>
+            <div class="text-block">
+                <h3>02 / 核心治则与功效</h3>
+                <ul class="effect-list">
+                    <li><strong>清热解毒</strong>：直击病因，清除肌肤深层热毒，快速缓解红肿热痛，阻断炎症发展。</li>
+                    <li><strong>活血化瘀</strong>：疏通阻塞脉络，改善局部微循环，消除瘀肿，为组织再生扫清障碍。</li>
+                    <li><strong>消肿止痛</strong>：缓解创伤剧痛，减轻组织水肿，为创面修复创造稳定、舒适的环境。</li>
+                    <li><strong>祛腐生肌</strong>：清除坏死组织，促进肉芽生长与上皮再生，加速愈合，减少瘢痕。</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3>适用人群</h3>
+        <p>以下体表问题人群可参考使用：烧伤、烫伤、外伤流血、带状疱疹、糖尿病足、外表溃疡、化脓创面</p>
+        <div class="img-box" style="margin:20px 0;max-width:700px;">
+            <!-- 替换为你的图片地址 -->
+            <img alt="创面示例图" src="images/pic1.jpg">
+">
+        </div>
+        <p>天然草本萃取 · 温和修护创面</p>
+        <div class="tip-warning">
+            ⚠️ 温馨提示：严重创面、感染严重者请优先就医，本品仅作日常草本养护辅助，不可替代正规治疗。
+        </div>
+    </section>
+
+    <!-- 滋肾养肝汤 -->
+    <section class="product-section">
+        <h2>滋肾养肝汤 · 概述与核心功效</h2>
+        <p><strong>产品定位：</strong>专为现代都市人群设计的养生汤方，针对肝脏、肾脏及代谢功能失调，从根源出发提供整体调理方案，兼顾养生需求与日常便捷饮用。</p>
+
+        <div class="two-col">
+            <div class="text-block">
+                <h3>肝肾同源 · 精血互生</h3>
+                <p>中医经典理论认为“肝藏血，肾藏精”，精血互生互化。养肝必先补肾，补肾亦可养肝，二者相辅相成，是调理脏腑平衡的核心根基。</p>
+            </div>
+            <div class="text-block">
+                <h3>痰湿体质 · 疏泄运化</h3>
+                <p>现代都市常见的脂肪肝、肥胖、高血脂等问题，多源于“肝失疏泄，脾失健运”。痰湿内阻不仅影响体态，更是脏腑功能失调的外在表现。</p>
+            </div>
+        </div>
+        <p><strong>核心治则：</strong>滋阴润燥 • 养肝解酒 • 祛湿化痰 • 补肾益精<br/>
+        通过多维调理，恢复肝、肾、脾三大脏腑的功能平衡，从内而外改善代谢与体质，回归身心舒泰的健康状态。
+        </p>
+
+        <h3 style="margin-top:30px;">适用人群</h3>
+        <div class="people-wrap">
+            <!-- 脂肪肝 -->
+            <div class="people-card">
+                <img alt="脂肪肝示意图" src="images/pic2.jpg">
+">
+                <div class="desc">
+                    <h4>脂肪肝与酒精肝调理</h4>
+                    <p>疏肝理气、健脾祛湿，有效化解肝脏脂肪堆积，加速酒精代谢与毒素排出。深层修复受损肝细胞，恢复肝脏解毒功能，从根源改善肝部亚健康状态。</p>
+                </div>
+            </div>
+            <!-- 高血脂 -->
+            <div class="people-card">
+                <img alt="血脂试管对比" src="images/pic3.jpg">
+                <div class="desc">
+                    <h4>高血脂与代谢调节</h4>
+                    <p>调节脂质代谢紊乱，降低甘油三酯与胆固醇水平，改善血液粘稠度。清除血管内多余油脂，缓解代谢综合征，预防心血管隐患，重塑血液健康环境。</p>
+                </div>
+            </div>
+            <!-- 肥胖 -->
+            <div class="people-card">
+                <img alt="腹型肥胖" src="images/pic4.jpg">
+                <div class="desc">
+                    <h4>肥胖与体质重塑</h4>
+                    <p>调理脏腑功能，平衡气血与水湿代谢，告别单纯节食减重。通过内在调理提升基础代谢率，实现健康减脂，减少赘肉堆积，减重后不易反弹。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <h3>感谢聆听<br>THANK YOU</h3>
+        <p style="margin-top:10px;">传承千年本草智慧，守护身心本源健康<br>愿这份自然的馈赠，为您带来长久的安康与活力</p>
+    </footer>
+</div>
+</body>
+</html>
